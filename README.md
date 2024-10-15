@@ -7,7 +7,7 @@ _G.Fruit = {
     ['Select Fruit'] = {'Flame-Flame','Ice-Ice','Sand-Sand','Dark-Dark','Light-Light','Magma-Magma','Quake-Quake','Spider-Spider'}
 }
 _G.Race = { 
-    ['Select Race'] = {'Human'},
+    ['Select Race'] = {'Fish'},
     ['Lock Race'] = true,
     ['Quest Race V3'] = true
 }
