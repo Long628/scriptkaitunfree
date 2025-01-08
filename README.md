@@ -1,38 +1,27 @@
-Config = Config or {
-["Main"] = {
-
-},
-["Process"] = {
-["Force Staying In Second Sea Until Have Dark Fragments"] = true,
-["Soul Guitar Quest"] = true,
-["Cursed Dual Katana Quest"] = true,
-["Auto Fully Mirror Fragtal"] = true,
-["Purchase Hidden Sword"] = true,
-["Purchase Legend Haki Color"] = true,
-["Max Fragments To Raid"] = {2000, 7500}, -- just effect if player level isnt max / first arg: sea 2, sec arg: sea 3
-["Fruit Hop"] =
-{
-["Enable"] = true,
-["Delay Per Server"] = 60
+-- Max level, godhuman, cdk, sgt
+getgenv().Shutdown = true -- shutdown server it fail hop
+getgenv().Configs = {
+    ["Team"] = "Marines",
+    ["Gun Farm"] = false, -- Disabled
+    ["FPS Boost"] = {
+        ["Enable"] = true,
+        ["FPS Cap"] = 60,
+    },
+    ["Farm Boss Drops"] = {
+        ["Enable"] = false,
+        ["When x2 Exp Expired"] = false
+    },
+    ["Auto Evo Race"] = false,
+    ["Awaken Fruit"] = false,
+    ["Rainbow Haki"] = true,
+    ["Hop Player Near"] = true,
+    ["Skull Guitar"] = false,
+    ["Find Fruit"] = true, -- Will find 1m+ fruit to unlock swan door to access third sea
+    ["Cursed Dual Katana"] = true,
+    ["Switch Melee"] = true,
+    ["Eat Fruit"] = "", -- leave blank for none, put the fruit name like this example: Smoke Fruit, T-Rex Fruit, ...
+    ["Snipe Fruit"] = "", -- leave blank for none, put the fruit name like this example: Smoke Fruit, T-Rex Fruit, ...
+    ["Lock Fragment"] = 0,
+    ["Buy Stuffs"] = true -- buso, geppo, soru, ken haki
 }
-},
-["Demon Fruit"] = {
-["Sniping Fruit"] = {
-'Dough-Dough'
-}, --Fruit to snipe when it on stock
-["Only Eat Awakenable Fruit"] = true,
-["Lock Fruit"] = {"Kitsune-Kitsune"}
-},
-["Farming"] = {
-["Type Of Farming When Done All Tasks"] = "Custom Script", -- Custom Script / Nearby Farm /
-["Custom Script"] = ""
-},
-["Utilly"] = {
-["White Screen"] = false,
-["Auto Add Friends / Accept Requests"] = false,
-["Anti Flagging"] = true,
-["Auto Hop If There Are Nearby Player When Level Farming"] = true,
-["Enable Ui"] = true
-}
-}
-loadstring(game:HttpGet[[https://api.eltrul.xyz/files/KaitunLoader.lua]])()
+repeat task.wait() pcall(function() loadstring(game:HttpGet("https://reviewphim.fun/Xero%20Hub/Blox%20Fruit/kaitun.lua"))() end) until getgenv().Check_Execute
