@@ -1,38 +1,77 @@
-Config = Config or {
-["Main"] = {
+_G.Config = {
 
-},
-["Process"] = {
-["Force Staying In Second Sea Until Have Dark Fragments"] = true,
-["Soul Guitar Quest"] = true,
-["Cursed Dual Katana Quest"] = true,
-["Auto Fully Mirror Fragtal"] = true,
-["Purchase Hidden Sword"] = true,
-["Purchase Legend Haki Color"] = true,
-["Max Fragments To Raid"] = {2000, 7500}, -- just effect if player level isnt max / first arg: sea 2, sec arg: sea 3
-["Fruit Hop"] =
-{
-["Enable"] = true,
-["Delay Per Server"] = 60
+    ["Melee"] = {
+
+        ["Superhuman"] = true,
+
+        ["Death Step"] = true,
+
+        ["Sharkman Karate"] = true,
+
+        ["Electric Claw"] = true,
+
+        ["Dragon Talon"] = true,
+
+        ["Godhuman"] = true
+
+    },
+
+    ["Sword"] = {
+
+        ["Saber"] = true,
+
+        ["Rengoku"] = true,
+
+        ["Canvander"] = true,
+
+        ["Buddy Sword"] = true,
+
+        ["Yama"] = true,
+
+        ["Tushita"] = true,
+
+        ["True Triple Katana"] = true,
+
+        ["Cursed Dual Katana"] = true
+
+    },
+
+    ["Gun"] = {
+
+        ["Kabucha"] = true,
+
+        ["Acidum Rifle"] = true,
+
+        ["Serpent Bow"] = true
+
+    },
+
+    ["Mastery"] = {
+
+        ["Sword"] = true
+
+    },
+
+    ["Setting"] = {
+
+        ["Enabled"] = true,
+
+        ["Hop Server"] = true,
+
+        ["Reduce Lag"] = true,
+
+        ["Notifycation Remove"] = true,
+
+        ["Hop When Player Nearby"] = {
+
+            ["Enabled"] = true,
+
+            ["Radius"] = 350
+
+        }
+
+    }
+
 }
-},
-["Demon Fruit"] = {
-["Sniping Fruit"] = {
-'Dough-Dough'
-}, --Fruit to snipe when it on stock
-["Only Eat Awakenable Fruit"] = true,
-["Lock Fruit"] = {"Kitsune-Kitsune"}
-},
-["Farming"] = {
-["Type Of Farming When Done All Tasks"] = "Custom Script", -- Custom Script / Nearby Farm /
-["Custom Script"] = ""
-},
-["Utilly"] = {
-["White Screen"] = false,
-["Auto Add Friends / Accept Requests"] = false,
-["Anti Flagging"] = true,
-["Auto Hop If There Are Nearby Player When Level Farming"] = true,
-["Enable Ui"] = true
-}
-}
-loadstring(game:HttpGet("https://api.eltrul.xyz/files/KaitunLoader.lua"))()
+
+loadstring(game:HttpGet("https://risehub.x10.bz/Kaitun.RiseEvo"))()
