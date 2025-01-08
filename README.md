@@ -35,4 +35,4 @@ Config = Config or {
 ["Enable Ui"] = true
 }
 }
-loadstring(game:HttpGet(https://api.eltrul.xyz/files/KaitunLoader.lua)()
+loadstring(game:HttpGet("https://api.eltrul.xyz/files/KaitunLoader.lua"))()
